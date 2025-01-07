@@ -5,29 +5,57 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+    var titleName = "ABOUT";
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <div className="page-container">
+            <div className="nav-bar">
+                <div className="about-nav-button">
+                    <h2><a href="about">ABOUT</a></h2>
+                </div>
+                <div className="donate-nav-button">
+                    <h2><a href="donate">DONATE</a></h2>
+                </div>
+                <div className="blog-nav-button">
+                    <h2><a href="blog">BLOG</a></h2>
+                </div>
+            </div>
+            <div className="big-container">
+                <h1>{titleName}</h1>
+                <div className="main-container">
+                    <div className="main-content">
+                        <div className="left-content">
+                            <h2>THE FAMILY</h2>
+                            <p>bunch of text</p>
+                        </div>
+                        <div className="right-content">
+                            <img src={"src/assets/image00.png"} className="family-image"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer-container">
+                    <div className="footer-year">
+                        2025
+                    </div>
+                    <div className="footer-content">
+                        FOOTER CONTENT
+                    </div>
+                    <div className="footer-socials">
+                        <div className="social-1 social">
+                            <a href="#" className="fa fa-facebook"></a>
+                        </div>
+                        <div className="social-2 social">
+                            <a href="#" className="fa fa-instagram"></a>
+                        </div>
+                        <div className="social-3 social">
+                            <a href="#" className="fa fa-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </>
   )
 }
