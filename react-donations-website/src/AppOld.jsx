@@ -1,22 +1,20 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
-import About from './components/About/About'
-import Donate from './components/Donate/Donate'
 
 function App() {
+  const [count, setCount] = useState(0)
     let titleName = "ABOUT";
 
   return (
-    <BrowserRouter>
+    <>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <div className="page-container">
             <div className="nav-bar">
                 <div className="about-nav-button">
-                    <Link to="/about">ABOUT</Link>
+                    <h2><a href="about">ABOUT</a></h2>
                 </div>
                 <div className="donate-nav-button">
-                    <Link to="/donate">DONATE</Link>
+                    <h2><a href="donate">DONATE</a></h2>
                 </div>
                 <div className="blog-nav-button">
                     <h2><a href="blog">BLOG</a></h2>
@@ -25,11 +23,30 @@ function App() {
             <div className="big-container">
                 <h1>{titleName}</h1>
                 <div className="main-container">
-                    <Routes>
-                        <Route path="/about" element={<About/>}/>
-                        <Route path="/donate" element={<Donate/>}/>
-                        <Route path="*" element={<About/>}/>
-                    </Routes>
+                    <div className="main-content main-1">
+                        <div className="left-content">
+                            <h3>THE FAMILY</h3>
+                            <p>bunch of text bunch of text bunch of text bunch of text bunch of text bunch of text bunch
+                                of text bunch of text bunch of text bunch of text bunch of text bunch of text bunch of
+                                text bunch of text
+                            </p>
+                        </div>
+                        <div className="right-content">
+                            <img src={"src/assets/image00.png"} className="family-image" alt={"a family stood together"} />
+                        </div>
+                    </div>
+                    <div className="main-content main-2">
+                        <div className="left-content">
+                            <img src={"src/assets/image00.png"} className="family-image"  alt={"a family stood together"}/>
+                        </div>
+                        <div className="right-content">
+                        <h3>YOUR CONTRIBUTION</h3>
+                            <p>bunch of text bunch of text bunch of text bunch of text bunch of text bunch of text bunch
+                                of text bunch of text bunch of text bunch of text bunch of text bunch of text bunch of
+                                text bunch of text
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="footer-container">
                     <div className="footer-year">
@@ -52,7 +69,7 @@ function App() {
                 </div>
             </div>
         </div>
-    </BrowserRouter>
+    </>
   )
 }
 
