@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
 import About from './components/About/About'
 import Donate from './components/Donate/Donate'
+import Blog from './components/Blog/Blog'
 
 function App() {
     let titleName = "ABOUT";
@@ -13,13 +14,13 @@ function App() {
         <div className="page-container">
             <div className="nav-bar">
                 <div className="about-nav-button">
-                    <Link to="/about">ABOUT</Link>
+                    <Link to="/about" className="nav-button">ABOUT</Link>
                 </div>
                 <div className="donate-nav-button">
-                    <Link to="/donate">DONATE</Link>
+                    <Link to="/donate" className="nav-button">DONATE</Link>
                 </div>
                 <div className="blog-nav-button">
-                    <h2><a href="blog">BLOG</a></h2>
+                    <Link to="/blog" className="nav-button">BLOG</Link>
                 </div>
             </div>
             <div className="big-container">
@@ -28,6 +29,7 @@ function App() {
                     <Routes>
                         <Route path="/about" element={<About/>}/>
                         <Route path="/donate" element={<Donate/>}/>
+                        <Route path="/blog" element={<Blog/>}/>
                         <Route path="*" element={<About/>}/>
                     </Routes>
                 </div>
