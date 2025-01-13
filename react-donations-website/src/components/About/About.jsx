@@ -1,6 +1,4 @@
-
-
-const About = () => {
+const About = (myFunction) => {
     return (
         <>
             <div className="main-content main-1">
