@@ -10,7 +10,7 @@ const Blog = () => {
                     </p>
                 </div>
                 <div className="right-content">
-                    <img src={"src/assets/image00.png"} className="family-image" alt={"a family stood together"}/>
+                    <img src={"src/assets/family-stock-image.jpg"} className="family-image" alt={"a family stood together"}/>
                 </div>
             </div>
         </>

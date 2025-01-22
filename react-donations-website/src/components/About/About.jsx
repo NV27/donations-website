@@ -10,12 +10,12 @@ const About = (myFunction) => {
                     </p>
                 </div>
                 <div className="right-content">
-                    <img src={"src/assets/image00.png"} className="family-image" alt={"a family stood together"}/>
+                    <img src={"src/assets/family-stock-image.jpg"} className="family-image" alt={"a family stood together"}/>
                 </div>
             </div>
             <div className="main-content main-2">
                 <div className="left-content">
-                    <img src={"src/assets/image00.png"} className="family-image" alt={"a family stood together"}/>
+                    <img src={"src/assets/family-stock-image.jpg"} className="family-image" alt={"a family stood together"}/>
                 </div>
                 <div className="right-content">
                     <h3>YOUR CONTRIBUTION</h3>
